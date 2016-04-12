@@ -1,0 +1,18 @@
+---
+- name: Install System packages
+  apt: pkg={{ item }} state=present
+  with_items:
+    - curl
+    - git
+    - wget
+    - python-software-properties
+    - mc
+    - htop
+    - gzip
+    - build-essential
+
+- name: Configure timezone
+  template: src=timezone.j2 dest=/etc/timezone
+
+- name: Configure localtime
+  file: src=/usr/share/zoneinfo/{{ timezone }} dest=/etc/localtime state=link force=yes backup=yes
