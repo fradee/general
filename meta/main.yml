@@ -8,6 +8,10 @@ galaxy_info:
   min_ansible_version: 2.0
   issue_tracker_uri: https://github.com/fradee/general/issues
   platforms:
-    - name: Ubuntu
+    - name: Ubuntu Server
       versions:
         - all
+  galaxy_tags:
+    - database
+    - mysql
+    - percona
