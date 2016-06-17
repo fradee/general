@@ -22,8 +22,8 @@ Available variables are listed below with its default values.
 	- hosts: database
       become: yes
       roles:
-        - general
-        - Xobb.percona
+        - fradee.general
+        
 
 ## License
 
