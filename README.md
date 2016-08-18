@@ -1,21 +1,27 @@
 # Ansible Role: general
 
-Ansible playbook to install general order applications:
+## Install by default if not defined other:
         curl
+        acl
         git
-        wget
-        python-software-properties
         mc
         htop
         gzip
-        build-essential
 
 ## Role Variables
 
 Available variables are listed below with its default values.
 
-	development: true
-    timezone: "Europe/Kiev"
+     fradee_timezone: Europe/Kiev
+     fradee_packages:
+         - curl
+         - acl
+         - git
+         - mc
+         - htop
+         - gzip
+     fradee_repos:
+         - ppa:ondrej/php
 
 ## Example Playbook
 

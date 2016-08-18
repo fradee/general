@@ -1,0 +1,14 @@
+---
+# set timezone fradee.general
+fradee_timezone: "Europe/Kiev"
+#set packgaes fradee.general
+fradee_packages:
+   - curl
+   - acl
+   - git
+   - mc
+   - htop
+   - gzip
+#set specsfic repos if need
+fradee_repos:
+   - ppa:ondrej/php

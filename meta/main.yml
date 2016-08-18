@@ -10,8 +10,9 @@ galaxy_info:
   platforms:
     - name: Ubuntu Server
       versions:
-        - all
+        - trusty
   galaxy_tags:
     - general
+    - repository
     - web
     - tools
