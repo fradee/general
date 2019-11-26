@@ -1,7 +1,8 @@
 ---
 - name: Install System packages
-  apt: pkg={{ item }} state=present
-  with_items: "{{ fradee_packages }}"
+  apt:
+    state: present
+    pkg: "{{ fradee_packages }}"
 
 - name: Configure timezone
   template: src=timezone.j2 dest=/etc/timezone
